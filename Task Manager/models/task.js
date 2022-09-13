@@ -1,7 +1,7 @@
-const mongooose = require('monsooge');
+const mongoose = require('mongoose');
 
 
-const TaskSchema = new mongooose.Schema({
+const TaskSchema = new mongoose.Schema({
     name:String,
     completed:Boolean
 })
