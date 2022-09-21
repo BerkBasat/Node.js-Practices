@@ -15,6 +15,7 @@ const auth = (req,res,next) => {
     {
         const payload = jwt.verify(token, process.env.JWT_SECRET)
         //attach user to the job
+
         req.user = {userId:payload.userId, name:payload.name}
         next()
     } 
